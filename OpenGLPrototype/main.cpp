@@ -117,31 +117,16 @@ int main(int argc, char** argv) {
 	programID = makeShaderProgram(vertShaderID, fragShaderID); //fat gay global hmmm
 	glUseProgram(programID);
 
-	//Primitive* cube = new Primitive(ShapeTypes::Cube);
-	//GLuint vertBufferID;
-	//glGenBuffers(1, &vertBufferID); //a vertex buffer object is generated and the arbitrary ID of that vertex buffer object is assigned to the address vertBufferID
-	//glBindBuffer(GL_ARRAY_BUFFER, vertBufferID); //more abstractions!!; this describes what kind of VBO vertBufferID is and connects 
-	//											 //number of bytes of VRAM (GPU could possibly use something else) to allocate, the starting address of our array, optimization hint for GPU internals
-	//glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex)*cube->verticesToStore, cube->vertices, GL_STATIC_DRAW);
-	//glEnableVertexAttribArray(0); //position; 0 is arbitrary slot for new attribute of every vertex; opengl will only assume first attribute describes a position
-	//glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), 0);
-	//glEnableVertexAttribArray(1); //color; 1 is arbitrary slot for new attribute of every vertex; fragment shader code has to be written to utilize this attribute
-	//glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (void*)(3 * sizeof(GLfloat))); //the last argument defines offset until the first appearance of the attribute; 3 floats in
-
-	//GLuint indBufferID;
-	//glGenBuffers(1, &indBufferID);
-	//glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indBufferID);
-	//glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(GLushort)*cube->verticesToRender, cube->indices, GL_STATIC_DRAW);
-	//delete cube; //this line will make the cube invisible?? all geometry data should be stored on gpu now?
 	Primitive* cube = new Primitive(ShapeTypes::Cube);
 	GLuint vertBufferID;
-	glGenBuffers(1, &vertBufferID);
-	glBindBuffer(GL_ARRAY_BUFFER, vertBufferID);
+	glGenBuffers(1, &vertBufferID); //a vertex buffer object is generated and the arbitrary ID of that vertex buffer object is assigned to the address vertBufferID
+	glBindBuffer(GL_ARRAY_BUFFER, vertBufferID); //more abstractions!!; this describes what kind of VBO vertBufferID is and connects 
+												 //number of bytes of VRAM (GPU could possibly use something else) to allocate, the starting address of our array, optimization hint for GPU internals
 	glBufferData(GL_ARRAY_BUFFER, sizeof(Vertex)*cube->verticesToStore, cube->vertices, GL_STATIC_DRAW);
-	glEnableVertexAttribArray(0);
+	glEnableVertexAttribArray(0); //position; 0 is arbitrary slot for new attribute of every vertex; opengl will only assume first attribute describes a position
 	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), 0);
-	glEnableVertexAttribArray(1);
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (void*)(3 * sizeof(GLfloat)));
+	glEnableVertexAttribArray(1); //color; 1 is arbitrary slot for new attribute of every vertex; fragment shader code has to be written to utilize this attribute
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (void*)(3 * sizeof(GLfloat))); //the last argument defines offset until the first appearance of the attribute; 3 floats in
 
 	GLuint indBufferID;
 	glGenBuffers(1, &indBufferID);
