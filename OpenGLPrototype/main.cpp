@@ -132,7 +132,7 @@ int main(int argc, char** argv) {
 	glGenBuffers(1, &indBufferID);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indBufferID);
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(GLushort)*cube->verticesToRender, cube->indices, GL_STATIC_DRAW);
-	delete cube; //this line will make the cube invisible?? all geometry data should be stored on gpu now?
+	//delete cube; //this line will make the cube invisible?? all geometry data should be stored on gpu now?
 
 	glutReshapeFunc(changeViewport);
 	glutDisplayFunc(renderLoop);
