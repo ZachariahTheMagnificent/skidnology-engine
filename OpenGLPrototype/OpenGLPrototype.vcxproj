@@ -119,14 +119,14 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\richard702\Documents\GLStuff\glm;C:\Users\richard702\Documents\GLStuff\glew-2.1.0\include;C:\Users\richard702\Documents\GLStuff\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\richard702\source\repos\OpenGLPrototype\OpenGLPrototype\glm;C:\Users\richard702\source\repos\OpenGLPrototype\OpenGLPrototype\glew-2.1.0\include;C:\Users\richard702\source\repos\OpenGLPrototype\OpenGLPrototype\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>glew32.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\richard702\Documents\GLStuff\glew-2.1.0\lib\Release\Win32;C:\Users\richard702\Documents\GLStuff\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\richard702\source\repos\OpenGLPrototype\OpenGLPrototype\glew-2.1.0\lib\Release\Win32;C:\Users\richard702\source\repos\OpenGLPrototype\OpenGLPrototype\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <FxCompile>
       <ShaderType>Effect</ShaderType>
@@ -141,14 +141,14 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\richard702\Documents\GLStuff\glm;C:\Users\richard702\Documents\GLStuff\glew-2.1.0\include;C:\Users\richard702\Documents\GLStuff\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\richard702\source\repos\OpenGLPrototype\OpenGLPrototype\glm;C:\Users\richard702\source\repos\OpenGLPrototype\OpenGLPrototype\glew-2.1.0\include;C:\Users\richard702\source\repos\OpenGLPrototype\OpenGLPrototype\freeglut\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>glew32.lib;freeglut.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\richard702\Documents\GLStuff\glew-2.1.0\lib\Release\Win32;C:\Users\richard702\Documents\GLStuff\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>C:\Users\richard702\source\repos\OpenGLPrototype\OpenGLPrototype\glew-2.1.0\lib\Release\Win32;C:\Users\richard702\source\repos\OpenGLPrototype\OpenGLPrototype\freeglut\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <FxCompile>
       <ShaderType>Effect</ShaderType>
